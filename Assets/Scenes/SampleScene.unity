@@ -459,6 +459,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus2constructorD20
       objectReference: {fileID: 0}
+    - target: {fileID: 7128257415240796063, guid: 5e49c6aa534a94a00a08092f7538a2ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
     - target: {fileID: 8981664118790497230, guid: 5e49c6aa534a94a00a08092f7538a2ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -776,7 +781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246341434}
   m_Layer: 0
-  m_Name: ground
+  m_Name: groundShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1274,6 +1279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus2constructorD20
       objectReference: {fileID: 0}
+    - target: {fileID: 7128257415240796063, guid: 5e49c6aa534a94a00a08092f7538a2ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
     - target: {fileID: 8981664118790497230, guid: 5e49c6aa534a94a00a08092f7538a2ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1340,8 +1350,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 394555737}
+  - component: {fileID: 394555738}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: animatedCactus1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,12 +1368,27 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1175818329}
-  - {fileID: 1571576036}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &394555738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394555736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f367807d0e86a46dbb235aa3db33078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cactusPrefab1: {fileID: 9035150466337425062, guid: c445f0e6c8a1a4bb9b17b4f7e0c92cbb,
+    type: 3}
+  rotationDeg: 20
+  cactusloopsize: 0
+  timer: 0
 --- !u!1001 &399995890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1762,7 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513211435}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2084,6 +2110,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
@@ -2103,6 +2134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus2constructorD20
       objectReference: {fileID: 0}
+    - target: {fileID: 7128257415240796063, guid: 5e49c6aa534a94a00a08092f7538a2ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
     - target: {fileID: 8981664118790497230, guid: 5e49c6aa534a94a00a08092f7538a2ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2627,6 +2663,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
@@ -2702,6 +2743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cactus2constructorD20
       objectReference: {fileID: 0}
+    - target: {fileID: 7128257415240796063, guid: 5e49c6aa534a94a00a08092f7538a2ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
     - target: {fileID: 8981664118790497230, guid: 5e49c6aa534a94a00a08092f7538a2ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3239,7 +3285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175818329}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: cactus1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3252,13 +3298,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175818328}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1640734946}
-  m_Father: {fileID: 394555737}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1191140891
 PrefabInstance:
@@ -3964,13 +4010,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571576035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 865356290}
-  m_Father: {fileID: 394555737}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1608317029 stripped
 Transform:
@@ -4223,6 +4269,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
@@ -4545,7 +4596,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3aea75c19e41444c1bedc923ef760d69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4785,6 +4836,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
@@ -5268,6 +5324,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
