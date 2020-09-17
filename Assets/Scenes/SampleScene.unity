@@ -1351,6 +1351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 394555737}
   - component: {fileID: 394555738}
+  - component: {fileID: 394555739}
   m_Layer: 0
   m_Name: animatedCactus1
   m_TagString: Untagged
@@ -1388,7 +1389,22 @@ MonoBehaviour:
     type: 3}
   rotationDeg: 20
   cactusloopsize: 0
-  timer: 0
+  timerA: 0
+--- !u!114 &394555739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394555736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48fe468f407a4300b01e61509e0b6c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 0
+  spin: -360
+  spinScale: 2
 --- !u!1001 &399995890
 PrefabInstance:
   m_ObjectHideFlags: 0
