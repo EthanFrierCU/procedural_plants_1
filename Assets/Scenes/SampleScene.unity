@@ -859,7 +859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283841861}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.151337, y: 0.3940451, z: -9.739227}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414819512}
@@ -881,6 +881,9 @@ MonoBehaviour:
     type: 3}
   rotationDeg: 20
   flowerLoopSize: 0
+  startPos: 45
+  endPos: -10
+  bloomSpeed: 0.18
 --- !u!4 &301692197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8721695375535993551, guid: 85c4f916096824f52ade2153ebc29009,
@@ -1531,6 +1534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414819512}
+  - component: {fileID: 414819513}
   m_Layer: 0
   m_Name: animatedFlower
   m_TagString: Untagged
@@ -1546,7 +1550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414819511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.151337, y: -0.3940451, z: 9.739227}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1659428531}
@@ -1555,6 +1559,19 @@ Transform:
   m_Father: {fileID: 937446632}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &414819513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414819511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ef9c269dfe4d0c9ab0d0f64060cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleSpeed: 0.2
 --- !u!1001 &422133685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1973,7 +1990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610558771}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.151337, y: 0.3940451, z: -9.739227}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414819512}
@@ -1995,6 +2012,9 @@ MonoBehaviour:
     type: 3}
   rotationDeg: 20
   flowerLoopSize: 0
+  startPos: 30
+  endPos: -10
+  bloomSpeed: 0.16
 --- !u!1001 &612233134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2297,7 +2317,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 8981664118790497230, guid: 5e49c6aa534a94a00a08092f7538a2ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3037,6 +3057,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
@@ -4146,6 +4171,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2867892556376594343, guid: 1f2ba4c5195e94312ad936e799063728,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name
@@ -4421,7 +4451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659428530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.151337, y: 0.3940451, z: -9.739227}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414819512}
@@ -4439,10 +4469,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea7c583de7eb4d6aa64ddca8bfa6440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowerPrefabA: {fileID: 3130467925330373683, guid: 6fc78bbc3de2b4901a87ce55f132b376,
+  flowerPrefabA: {fileID: 3348939470693538907, guid: 43f812749444e4ba58fd2460619f2408,
     type: 3}
   rotationDeg: 20
   flowerLoopSize: 0
+  startPos: 55
+  endPos: -10
+  bloomSpeed: 0.2
 --- !u!1 &1662639863
 GameObject:
   m_ObjectHideFlags: 0
@@ -5650,7 +5683,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 05f5c0b7e92db4a6bba25750758b132e, type: 2}
+      objectReference: {fileID: 2100000, guid: c1a0e4bdc0ecb40b28d117dc9f549a85, type: 2}
     - target: {fileID: 5486645415057829672, guid: 1f2ba4c5195e94312ad936e799063728,
         type: 3}
       propertyPath: m_Name

@@ -20,7 +20,7 @@ public class cactusScaler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        seconds = Time.time;
+        seconds += Time.deltaTime;
 
         transform.localScale = new Vector3(Mathf.Lerp(0.0f,1.0f,tLerp),Mathf.Lerp(0.0f,1.0f,tLerp),Mathf.Lerp(0.0f,1.0f,tLerp));
         tLerp += 0.3f * Time.deltaTime;
