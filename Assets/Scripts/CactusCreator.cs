@@ -20,6 +20,7 @@ public class CactusCreator : MonoBehaviour
             cactusSlice.transform.localEulerAngles = new Vector3(0, i*rotationDeg, 0);
             cactusSlice.GetComponent<Renderer>().material.color = new Color(Random.Range(0.1f,0.3f), Random.Range(0.3f,0.6f), Random.Range(0.1f,0.3f), 100);
             cactusSlice.transform.parent = transform;
+            cactusSlice.transform.localPosition = new Vector3(0,1,0);
             cactusSlice.SetActive(false);
         }
     }

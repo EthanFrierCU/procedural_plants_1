@@ -22,6 +22,7 @@ public class flowerCreatorA : MonoBehaviour
             flowerPedalA.transform.localPosition = new Vector3(0, 2, 0);
             flowerPedalA.transform.localEulerAngles = new Vector3(0, i*rotationDeg, startPos);
             flowerPedalA.transform.parent = transform;
+            flowerPedalA.transform.localPosition = new Vector3(0,0,0);
         }
 
     }
