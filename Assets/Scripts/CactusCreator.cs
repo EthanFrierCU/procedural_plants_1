@@ -28,7 +28,8 @@ public class CactusCreator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerA = Time.frameCount;
+        timerA += 1;
+
         foreach (Transform child in transform)
 		{
 		    if ( timerA < child.localEulerAngles.y ) {
